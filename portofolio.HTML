@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Interaktif - Rafi Bagus Prayoga</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body class="bg-slate-900 text-slate-300">
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <div id="preloader">
+        <div class="loader-ring"><div></div><div></div><div></div><div></div></div>
+    </div>
+
+    <header class="bg-slate-900/70 backdrop-blur-md sticky top-0 z-50 shadow-lg shadow-black/20">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-xl font-bold text-white hover:text-sky-400 transition-colors">RBP</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="nav-link font-medium">Tentang Saya</a>
+                <a href="#experience" class="nav-link font-medium">Pengalaman</a>
+                <a href="#projects" class="nav-link font-medium">Proyek</a>
+                <a href="#skills" class="nav-link font-medium">Keterampilan</a>
+                <a href="#my-journey" class="nav-link font-medium">Perjalanan</a>
+                <a href="#certificates" class="nav-link font-medium">Sertifikat</a>
+                <a href="#background" class="nav-link font-medium">Latar Belakang</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-800">
+            <a href="#about" class="block text-center py-3 px-4 text-sm hover:bg-slate-700 transition-colors">Tentang Saya</a>
+            <a href="#experience" class="block text-center py-3 px-4 text-sm hover:bg-slate-700 transition-colors">Pengalaman</a>
+            <a href="#projects" class="block text-center py-3 px-4 text-sm hover:bg-slate-700 transition-colors">Proyek</a>
+            <a href="#skills" class="block text-center py-3 px-4 text-sm hover:bg-slate-700 transition-colors">Keterampilan</a>
+            <a href="#my-journey" class="block text-center py-3 px-4 text-sm hover:bg-slate-700 transition-colors">Perjalanan Saya</a>
+            <a href="#certificates" class="block text-center py-3 px-4 text-sm hover:bg-slate-700 transition-colors">Sertifikat</a>
+            <a href="#background" class="block text-center py-3 px-4 text-sm hover:bg-slate-700 transition-colors">Latar Belakang</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-8 md:py-12">
+
+        <section id="hero" class="text-center min-h-[80vh] flex items-center justify-center mb-16 md:mb-24 rounded-2xl p-8">
+            <canvas id="particle-canvas"></canvas>
+            <div class="spotlight"></div>
+            <div class="hero-content">
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-4" data-scroll="fade-down">Rafi Bagus Prayoga</h1>
+                <p class="text-lg md:text-2xl text-sky-400 font-medium mb-8" data-scroll="fade-up" data-scroll-delay="200">
+                    <span id="typing-text"></span><span class="typing-cursor"></span>
+                </p>
+                <div class="flex justify-center flex-wrap items-center gap-x-6 gap-y-2 text-slate-400" data-scroll="fade-up" data-scroll-delay="400">
+                    <span>+6287871231958</span>
+                    <span class="text-slate-600 hidden sm:inline">|</span>
+                    <span>rafybagus060@gmail.com</span>
+                    <span class="text-slate-600 hidden sm:inline">|</span>
+                    <span>Kabupaten Garut, Jawa Barat</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="mb-16 md:mb-24 scroll-mt-20">
+            <h2 class="text-4xl font-bold text-center text-white mb-4" data-scroll="fade-up">Tentang Saya</h2>
+            <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12 p-8 rounded-xl section-card" data-scroll="zoom-in">
+                <img src="fotorbp.jpg" alt="Foto Rafi Bagus Prayoga" class="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-sky-500 shadow-lg">
+                <div class="text-center md:text-left">
+                    <p class="text-slate-300 text-lg leading-relaxed">
+                        Saya adalah seorang mahasiswa D3 Rekayasa Perangkat Lunak Aplikasi di Telkom University dengan hasrat mendalam pada dunia Quality Assurance dan pengembangan mobile. Saya percaya bahwa setiap baris kode dan setiap fitur harus berfungsi dengan sempurna untuk memberikan pengalaman terbaik bagi pengguna. Dengan pemikiran analitis dan perhatian terhadap detail, saya bersemangat untuk memecahkan masalah kompleks dan memastikan kualitas produk digital.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="mb-16 md:mb-24 scroll-mt-20">
+            <h2 class="text-4xl font-bold text-center text-white mb-4" data-scroll="fade-up">Pengalaman Magang</h2>
+            <p class="text-center text-slate-400 max-w-3xl mx-auto mb-12" data-scroll="fade-up" data-scroll-delay="100">
+                Pengalaman profesional saya dalam menerapkan pengetahuan akademis di lingkungan kerja nyata, menguji sistem, dan berkolaborasi dengan tim.
+            </p>
+            <div class="max-w-4xl mx-auto p-8 rounded-xl section-card" data-scroll="zoom-in">
+                <div class="flex flex-col sm:flex-row justify-between items-start gap-4">
+                    <div>
+                        <h3 class="text-xl font-semibold text-sky-400">Quality Assurance Intern</h3>
+                        <p class="text-white font-medium">Sekretariat Jenderal DPR RI – PUSTEKINFO</p>
+                    </div>
+                    <p class="text-slate-400 font-medium whitespace-nowrap text-sm sm:text-base">Januari 2025 – Mei 2025</p>
+                </div>
+                <ul class="mt-4 list-disc list-inside text-slate-400 space-y-2 pl-2">
+                    <li>Melakukan pengujian sistem informasi berbasis web milik DPR RI.</li>
+                    <li>Mencatat dan melaporkan bug kepada tim pengembang secara sistematis.</li>
+                    <li>Melakukan regression dan usability testing untuk memastikan kualitas rilis.</li>
+                    <li>Membantu dalam penyusunan dokumentasi hasil pengujian.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-16 md:mb-24 scroll-mt-20">
+            <h2 class="text-4xl font-bold text-center text-white mb-4" data-scroll="fade-up">Portofolio Proyek</h2>
+            <p class="text-center text-slate-400 max-w-3xl mx-auto mb-12" data-scroll="fade-up" data-scroll-delay="100">
+                Jelajahi berbagai proyek yang telah saya kerjakan. Gunakan filter untuk melihat proyek berdasarkan kategori.
+            </p>
+            <div class="flex justify-center flex-wrap gap-3 mb-8" data-scroll="fade-up" data-scroll-delay="200">
+                <button class="project-tab active px-4 py-2 text-sm font-semibold rounded-full" data-filter="all">Semua</button>
+                <button class="project-tab px-4 py-2 text-sm font-semibold rounded-full" data-filter="qa">Quality Assurance</button>
+                <button class="project-tab px-4 py-2 text-sm font-semibold rounded-full" data-filter="android">Android</button>
+                <button class="project-tab px-4 py-2 text-sm font-semibold rounded-full" data-filter="web">Web</button>
+            </div>
+            <div id="project-gallery" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                </div>
+        </section>
+
+        <section id="skills" class="mb-16 md:mb-24 scroll-mt-20">
+            <h2 class="text-4xl font-bold text-center text-white mb-4" data-scroll="fade-up">Keterampilan Teknis</h2>
+            <p class="text-center text-slate-400 max-w-3xl mx-auto mb-12" data-scroll="fade-up" data-scroll-delay="100">
+                Berikut adalah kumpulan teknologi, bahasa, dan alat yang saya gunakan dalam proyek-proyek saya.
+            </p>
+            <div class="p-4 sm:p-8 rounded-xl section-card" data-scroll="zoom-in">
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 text-center">
+                    </div>
+            </div>
+        </section>
+
+        <section id="my-journey" class="mb-16 md:mb-24 scroll-mt-20">
+            <h2 class="text-4xl font-bold text-center text-white mb-4" data-scroll="fade-up">Perjalanan Saya</h2>
+            <p class="text-center text-slate-400 max-w-3xl mx-auto mb-12" data-scroll="fade-up" data-scroll-delay="100">
+                Peta visual tentang bagaimana saya mengembangkan keahlian dan pengalaman di bidang teknologi.
+            </p>
+            <div class="timeline-container">
+                <div class="timeline-item left" data-scroll="fade-right">
+                    <div class="timeline-content">
+                        <h3 class="text-lg font-semibold text-sky-400">Telkom University</h3>
+                        <p class="text-white font-medium">D3 Rekayasa Perangkat Lunak Aplikasi</p>
+                        <p class="text-slate-400 text-sm">2022 - 2025</p>
+                        <p class="mt-2 text-slate-400 text-sm">Mempelajari dasar-dasar pengembangan perangkat lunak, termasuk mobile dan web, serta QA.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right" data-scroll="fade-left">
+                    <div class="timeline-content">
+                        <h3 class="text-lg font-semibold text-sky-400">Anggota Organisasi GIGABYTE</h3>
+                        <p class="text-white font-medium">Divisi Acara</p>
+                        <p class="text-slate-400 text-sm">2022 - 2023</p>
+                        <p class="mt-2 text-slate-400 text-sm">Terlibat dalam perencanaan dan pelaksanaan acara Mudik Roadshow Telkom University 2023.</p>
+                    </div>
+                </div>
+                 <div class="timeline-item left" data-scroll="fade-right">
+                    <div class="timeline-content">
+                        <h3 class="text-lg font-semibold text-sky-400">Proyek Website Edukasi Sampah</h3>
+                        <p class="text-white font-medium">Web Development</p>
+                        <p class="text-slate-400 text-sm">2023</p>
+                        <p class="mt-2 text-slate-400 text-sm">Mengembangkan website edukasi lingkungan dengan fitur CRUD artikel.</p>
+                    </div>
+                </div>
+                 <div class="timeline-item right" data-scroll="fade-left">
+                    <div class="timeline-content">
+                        <h3 class="text-lg font-semibold text-sky-400">Proyek Aplikasi Catatan Harian</h3>
+                        <p class="text-white font-medium">Android Development</p>
+                        <p class="text-slate-400 text-sm">2024</p>
+                        <p class="mt-2 text-slate-400 text-sm">Mengembangkan aplikasi catatan harian dengan fitur CRUD, mood user, dan rekap mood.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificates" class="mb-16 md:mb-24 scroll-mt-20">
+            <h2 class="text-4xl font-bold text-center text-white mb-4" data-scroll="fade-up">Sertifikasi</h2>
+            <p class="text-center text-slate-400 max-w-3xl mx-auto mb-12" data-scroll="fade-up" data-scroll-delay="100">
+                Bukti komitmen saya terhadap pembelajaran berkelanjutan. Geser atau gunakan panah untuk melihat lebih banyak.
+            </p>
+            <div class="relative" data-scroll="zoom-in">
+                <div id="certificate-gallery" class="flex overflow-x-auto space-x-8 py-4 snap-x snap-mandatory">
+                    </div>
+                <div class="text-center mt-6 flex justify-center gap-4">
+                    <button id="scroll-left-btn" class="p-2 rounded-full bg-slate-700 hover:bg-sky-500 text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                    <button id="scroll-right-btn" class="p-2 rounded-full bg-slate-700 hover:bg-sky-500 text-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="background" class="scroll-mt-20">
+             <h2 class="text-4xl font-bold text-center text-white mb-4" data-scroll="fade-up">Latar Belakang</h2>
+             <p class="text-center text-slate-400 max-w-3xl mx-auto mb-12" data-scroll="fade-up" data-scroll-delay="100">
+                Fondasi akademis dan soft skills yang mendukung perjalanan profesional saya.
+             </p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-8 rounded-xl section-card" data-scroll="fade-right">
+                    <h3 class="text-2xl font-bold text-white mb-6">Pendidikan & Organisasi</h3>
+                    <div class="mb-6">
+                        <h4 class="text-lg font-semibold text-sky-400">TELKOM UNIVERSITY</h4>
+                        <p class="text-slate-300">D3 Rekayasa Perangkat Lunak Aplikasi | 2022-2025</p>
+                        <p class="mt-2 inline-block bg-green-500/20 text-green-300 text-sm font-semibold px-3 py-1 rounded-full">IPK: 3.73 / 4.00</p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold text-sky-400">GIGABYTE</h4>
+                        <p class="text-slate-300">Anggota Divisi Acara | 2022-2023</p>
+                    </div>
+                </div>
+                <div class="p-8 rounded-xl section-card" data-scroll="fade-left">
+                    <h3 class="text-2xl font-bold text-white mb-6">Keterampilan Non-Teknis</h3>
+                     <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-700 text-slate-300 text-sm font-medium px-3 py-1 rounded-full">Problem Solving</span>
+                        <span class="bg-slate-700 text-slate-300 text-sm font-medium px-3 py-1 rounded-full">Leadership</span>
+                        <span class="bg-slate-700 text-slate-300 text-sm font-medium px-3 py-1 rounded-full">Teamwork</span>
+                        <span class="bg-slate-700 text-slate-300 text-sm font-medium px-3 py-1 rounded-full">Manajemen Waktu</span>
+                        <span class="bg-slate-700 text-slate-300 text-sm font-medium px-3 py-1 rounded-full">Komunikasi</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-slate-800 mt-16 md:mt-24">
+        <div class="container mx-auto px-6 py-8 text-center text-slate-500">
+            <p class="font-bold text-white text-lg mb-2">Hubungi Saya</p>
+             <div class="flex justify-center items-center space-x-6 mb-6">
+                <a href="mailto:rafybagus060@gmail.com" class="hover:text-sky-400 transition-colors">rafybagus060@gmail.com</a>
+            </div>
+            <p class="text-sm">&copy; 2025 Rafi Bagus Prayoga. Didesain dan dikodekan dengan penuh semangat.</p>
+        </div>
+    </footer>
+
+    <div id="certificate-modal" class="fixed inset-0 z-[100] flex items-center justify-center p-4 hidden opacity-0">
+        <div id="modal-backdrop" class="absolute inset-0"></div>
+        <img id="modal-img" src="" alt="Sertifikat" class="relative z-10 rounded-lg shadow-2xl transform scale-95">
+        <button id="modal-close" class="absolute top-4 right-4 text-white text-4xl z-20">&times;</button>
+    </div>
+
+    <script>
+        // Kode JavaScript ada di bagian JavaScript
+    </script>
+</body>
+</html>
